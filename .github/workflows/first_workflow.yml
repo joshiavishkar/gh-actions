@@ -4,7 +4,6 @@ jobs:
   first-job:
     runs-on: macos-latest
     steps:
-      - name : print greet
-        run : echo "Hello World..!!"
-      - name : print good bye
-        run : echo "Done bye..!!"
+      - name : Output Context Object
+        run : echo "${{ toJson(github) }}"
+      
